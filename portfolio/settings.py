@@ -3,16 +3,13 @@ from pathlib import Path
 from decouple import config
 from django.utils.translation import ugettext_lazy as _
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
-from portfolio import settings_local
-
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = config('SECRET_KEY')
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     'modeltranslation',
@@ -135,4 +132,3 @@ try:
     from .settings_local import *
 except ImportError:
     pass
-
