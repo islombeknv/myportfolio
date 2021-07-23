@@ -1,0 +1,209 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<!-- animation_405:53-->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DataHouse | Home</title>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="author" content="CreataThemes"/>
+    <link rel="shortcut icon" href="{% static 'img/fevicon.png' %}">
+
+    <!--Bootstrap Css-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}"/>
+
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+
+
+    <!-- Animate Css -->
+    <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+
+    <!-- Materialdesign icons Css -->
+    <link href="{% static 'css/materialdesignicons.min.css' %}" rel="stylesheet">
+
+    <!-- pe-icon-7 css -->
+    <link href="{% static 'css/pe-icon-7.css' %}" rel="stylesheet">
+
+    <!-- Animate Css -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/aos.css' %}">
+
+    <!-- Owl Slider -->
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/owl.theme.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/owl.transitions.css' %}"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto:wght@400;500&display=swap"
+          rel="stylesheet">
+
+
+    <!-- Custom style Css -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css" rel="stylesheet">
+    {% block extra_css %}
+
+    {% endblock %}
+</head>
+
+<body>
+
+{% include 'layouts/header.html' %}
+
+{% block content %}
+
+{% endblock %}
+
+{% include 'layouts/footer.html' %}
+<!-- Back to top -->
+<a href="#" class="back_top" style="display: inline; "> <i class="pe-7s-up-arrow"> </i> </a>
+
+<!-- JAVASCRIPTS -->
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/popper.min.js' %}"></script>
+<script src="{% static 'js/jquery.easing.min.js' %}"></script>
+
+<!-- scrollspy js -->
+<script src="{% static 'js/scrollspy.min.js' %}"></script>
+
+<!-- isotope js -->
+<script src="{% static 'js/isotope.js' %}"></script>
+
+<!-- magnific js -->
+<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+
+<!-- Particles Js -->
+<script src="{% static 'js/particles.js' %}"></script>
+<script src="{% static 'js/particles.app.js' %}"></script>
+
+<!-- isotope js -->
+<script src="{% static 'js/isotope.js' %}"></script>
+
+<!--TEXT TYPED-->
+<script src="{% static 'js/typed.js' %}"></script>
+
+<!-- Aos Js -->
+<script src="{% static 'js/aos.js' %}"></script>
+<!--Text Rotate-->
+<script src="{% static 'js/jquery.simple-text-rotator.js' %}"></script>
+<!-- custom js -->
+<script src="{% static 'js/custom.js' %}"></script>
+
+<script>
+    $(".element").each(function () {
+        var $this = $(this);
+        $this.typed({
+            strings: $this.attr('data-elements').split(','),
+            typeSpeed: 100,
+            backDelay: 3000
+        });
+    });
+</script>
+
+<script>
+    $(".text-typed").each(function () {
+        var $this = $(this);
+        $this.typed({
+            strings: $this.attr('data-elements').split(','),
+            typeSpeed: 50, // typing speed
+            backDelay: 10000 // pause before backspacing
+        });
+    });
+</script>
+<script>
+    $(".element").each(function () {
+        var $this = $(this);
+        $this.typed({
+            strings: $this.attr('data-elements').split(','),
+            typeSpeed: 100,
+            backDelay: 1000
+        });
+    });
+</script>
+<!-- simple-text-rotate -->
+<script>
+    $(".simple-text-rotate").textrotator({
+        animation: "fade",
+        speed: 1000
+    });
+</script>
+
+<script>
+    AOS.init({
+        easing: 'ease-in-out-sine',
+        duration: 1000
+    });
+</script>
+<script>
+    //made by vipul mirajkar thevipulm.appspot.com
+    var TxtType = function (el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function () {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+            this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+            this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) {
+            delta /= 2;
+        }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+            delta = this.period;
+            this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+            this.isDeleting = false;
+            this.loopNum++;
+            delta = 500;
+        }
+
+        setTimeout(function () {
+            that.tick();
+        }, delta);
+    };
+
+    window.onload = function () {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i = 0; i < elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+                new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+    };
+</script>
+<script src="//code.jivosite.com/widget/XWUYDNZ1c2" async></script>
+
+{% block extra_js %}
+
+{% endblock %}
+</body>
+
+
+<!-- animation_405:53-->
+</html>

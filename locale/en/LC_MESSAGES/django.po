@@ -1,0 +1,383 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-12 09:25+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\contact\models.py:6 .\posts\models.py:8 .\posts\models.py:102
+#: .\templates\index.html:551
+msgid "name"
+msgstr ""
+
+#: .\contact\models.py:7 .\posts\models.py:104 .\templates\index.html:556
+msgid "phone"
+msgstr ""
+
+#: .\contact\models.py:8 .\posts\models.py:103 .\templates\index.html:562
+msgid "email"
+msgstr ""
+
+#: .\contact\models.py:9 .\templates\index.html:568
+msgid "message"
+msgstr ""
+
+#: .\contact\models.py:11 .\myportfolio\models.py:7 .\myportfolio\models.py:27
+#: .\posts\models.py:12 .\posts\models.py:26 .\posts\models.py:39
+#: .\posts\models.py:52 .\posts\models.py:75
+msgid "created_at"
+msgstr ""
+
+#: .\contact\models.py:17
+msgid "contact"
+msgstr ""
+
+#: .\contact\models.py:18
+msgid "contacts"
+msgstr ""
+
+#: .\myportfolio\models.py:6 .\myportfolio\models.py:19 .\posts\models.py:23
+#: .\posts\models.py:37 .\posts\models.py:50 .\posts\models.py:71
+msgid "title"
+msgstr ""
+
+#: .\myportfolio\models.py:13 .\myportfolio\models.py:24 .\posts\models.py:58
+#: .\posts\models.py:66
+msgid "category"
+msgstr ""
+
+#: .\myportfolio\models.py:14 .\posts\models.py:59
+msgid "categories"
+msgstr ""
+
+#: .\myportfolio\models.py:18 .\posts\models.py:7 .\posts\models.py:70
+msgid "image"
+msgstr ""
+
+#: .\myportfolio\models.py:20 .\posts\models.py:72
+msgid "content"
+msgstr ""
+
+#: .\myportfolio\models.py:33 .\myportfolio\models.py:34
+msgid "portfolio"
+msgstr ""
+
+#: .\portfolio\settings.py:87
+msgid "English"
+msgstr ""
+
+#: .\portfolio\settings.py:88
+msgid "Uzbek"
+msgstr ""
+
+#: .\portfolio\settings.py:89
+msgid "Russian"
+msgstr ""
+
+#: .\posts\models.py:9
+msgid "position"
+msgstr ""
+
+#: .\posts\models.py:10
+msgid "info"
+msgstr ""
+
+#: .\posts\models.py:18 .\posts\models.py:19
+msgid "OurClients"
+msgstr ""
+
+#: .\posts\models.py:24
+msgid "partner"
+msgstr ""
+
+#: .\posts\models.py:32
+msgid "Ourpartners"
+msgstr ""
+
+#: .\posts\models.py:33
+msgid "OurPartners"
+msgstr ""
+
+#: .\posts\models.py:45
+msgid "tag"
+msgstr ""
+
+#: .\posts\models.py:46
+msgid "tags"
+msgstr ""
+
+#: .\posts\models.py:73
+msgid "long_description"
+msgstr ""
+
+#: .\posts\models.py:90
+msgid "blog"
+msgstr ""
+
+#: .\posts\models.py:91
+msgid "blogs"
+msgstr ""
+
+#: .\posts\models.py:99
+msgid "comments"
+msgstr ""
+
+#: .\posts\models.py:105 .\posts\models.py:112
+msgid "comment"
+msgstr ""
+
+#: .\posts\models.py:106
+msgid "created_on"
+msgstr ""
+
+#: .\posts\models.py:113
+msgid "commets"
+msgstr ""
+
+#: .\templates\index.html:33
+msgid "Living In Tashkent"
+msgstr ""
+
+#: .\templates\index.html:51
+msgid "Learn More"
+msgstr ""
+
+#: .\templates\index.html:68
+msgid ""
+"About</span> Me</h3>\n"
+"                            <div class=\"vr_line mx-auto d-block\"></div>\n"
+"                            <p class=\"sec_subtitle mx-auto text-muted "
+"pt-2\">Ut enim ad minim veniam, quis nostrud\n"
+"                                exercitation\n"
+"                                ullamco laboris nisi ut aliquip ex ea "
+"commodo consequat.</p>\n"
+"                            </div>\n"
+"                            </div>\n"
+"                            </div>\n"
+"                            <div class=\"row mt-3 vertical-content\" data-"
+"aos=\"fade-up\">\n"
+"                            <div class=\"col-lg-6\">\n"
+"                            <div class=\"about_content mt-3\">\n"
+"                            <h6 class=\"mb-3\">Hello & Welcome</h6>\n"
+"                            <h3 class=\"mb-3 font-weight-bold text-custom"
+"\">I'm Islombek.</h3>\n"
+"                            <ul class=\"mb-0 list-inline about-work\">\n"
+"                                <li class=\"list-inline-item mr-0 text-muted"
+"\">Full stack developer</li>\n"
+"                                <li class=\"list-inline-item mr-0 text-muted"
+"\">Freelanser</li>\n"
+"                                <li class=\"list-inline-item mr-0 text-muted"
+"\">Backend</li>\n"
+"                            </ul>\n"
+"                            <p class=\"text-muted mt-3\">The point of using "
+"Lorem Ipsum is that it has a more-or-less\n"
+"                                normal\n"
+"                                distribution of letters, as opposed to using "
+"'Content here, content here', making it\n"
+"                                look\n"
+"                                like\n"
+"                                readable English.</p>"
+msgstr ""
+
+#: .\templates\index.html:137 .\templates\layouts\footer.html:12
+#: .\templates\layouts\header.html:31 .\templates\navbar\nav.html:30
+msgid "Services"
+msgstr ""
+
+#: .\templates\index.html:139
+msgid ""
+"Ut enim ad minim veniam, quis\n"
+"                            nostrud\n"
+"                            exercitation\n"
+"                            ullamco laboris nisi ut aliquip ex ea commodo "
+"consequat.\n"
+"                        "
+msgstr ""
+
+#: .\templates\index.html:156 .\templates\index.html:173
+#: .\templates\index.html:190 .\templates\index.html:209
+#: .\templates\index.html:226 .\templates\index.html:243
+msgid ""
+"The standard chunk of Lorem Ipsum used since\n"
+"                                the is\n"
+"                                reproduced\n"
+"                                below for those interested."
+msgstr ""
+
+#: .\templates\index.html:266
+msgid ""
+"The standard chunk of Lorem\n"
+"                            Ipsum used since the is\n"
+"                            reproduced\n"
+"                            below for those interested."
+msgstr ""
+
+#: .\templates\index.html:277 .\templates\index.html:307
+msgid ""
+"Lorem ipsum dolor sit amet, consectetuer adipiscing\n"
+"                            elit. Aenean\n"
+"                            commodo\n"
+"                            ligula eget dolor."
+msgstr ""
+
+#: .\templates\index.html:334
+msgid ""
+"I Am Available For\n"
+"                            Freelancer."
+msgstr ""
+
+#: .\templates\index.html:340
+msgid "Hire Me!"
+msgstr ""
+
+#: .\templates\index.html:348
+msgid ""
+"I\n"
+"                                                Am\n"
+"                                                Available For Freelancer."
+msgstr ""
+
+#: .\templates\index.html:395
+msgid "Clients"
+msgstr ""
+
+#: .\templates\index.html:397 .\templates\index.html:457
+#: .\templates\index.html:494
+msgid ""
+"Ut enim ad minim veniam, quis nostrud\n"
+"                            exercitation\n"
+"                            ullamco laboris nisi ut aliquip ex ea commodo "
+"consequat."
+msgstr ""
+
+#: .\templates\index.html:429
+msgid "Our partner"
+msgstr ""
+
+#: .\templates\index.html:455
+msgid "News"
+msgstr ""
+
+#: .\templates\index.html:492
+msgid "Get In Tuch"
+msgstr ""
+
+#: .\templates\layouts\footer.html:7
+msgid "Important Link"
+msgstr ""
+
+#: .\templates\layouts\footer.html:9
+msgid "Terms & Condition"
+msgstr ""
+
+#: .\templates\layouts\footer.html:10
+msgid "Privacy Policy"
+msgstr ""
+
+#: .\templates\layouts\footer.html:11
+msgid "Return Policy"
+msgstr ""
+
+#: .\templates\layouts\footer.html:13
+msgid "Sitemap"
+msgstr ""
+
+#: .\templates\layouts\footer.html:17
+msgid "Our Pages"
+msgstr ""
+
+#: .\templates\layouts\footer.html:19 .\templates\layouts\header.html:25
+#: .\templates\navbar\nav.html:24
+msgid "Home"
+msgstr ""
+
+#: .\templates\layouts\footer.html:20
+msgid "Features"
+msgstr ""
+
+#: .\templates\layouts\footer.html:21 .\templates\layouts\header.html:28
+#: .\templates\navbar\nav.html:27
+msgid "About"
+msgstr ""
+
+#: .\templates\layouts\footer.html:22 .\templates\layouts\header.html:40
+#: .\templates\navbar\nav.html:40
+msgid "Client"
+msgstr ""
+
+#: .\templates\layouts\footer.html:23
+msgid "Pricing"
+msgstr ""
+
+#: .\templates\layouts\footer.html:27
+msgid "Support"
+msgstr ""
+
+#: .\templates\layouts\footer.html:29
+msgid "Help Center"
+msgstr ""
+
+#: .\templates\layouts\footer.html:30
+msgid "Live Chat"
+msgstr ""
+
+#: .\templates\layouts\footer.html:31
+msgid "Downloads"
+msgstr ""
+
+#: .\templates\layouts\footer.html:32
+msgid "Press Kit"
+msgstr ""
+
+#: .\templates\layouts\footer.html:36
+msgid "Locations"
+msgstr ""
+
+#: .\templates\layouts\footer.html:38
+msgid "Melbourne"
+msgstr ""
+
+#: .\templates\layouts\footer.html:39
+msgid "London"
+msgstr ""
+
+#: .\templates\layouts\footer.html:40
+msgid "New York"
+msgstr ""
+
+#: .\templates\layouts\footer.html:41
+msgid "San Francisco"
+msgstr ""
+
+#: .\templates\layouts\footer.html:42
+msgid "Ontario"
+msgstr ""
+
+#: .\templates\layouts\header.html:34 .\templates\navbar\nav.html:33
+msgid "Resume"
+msgstr ""
+
+#: .\templates\layouts\header.html:37 .\templates\navbar\nav.html:37
+msgid "Work"
+msgstr ""
+
+#: .\templates\layouts\header.html:44 .\templates\navbar\nav.html:44
+msgid "Blog"
+msgstr ""
+
+#: .\templates\layouts\header.html:47 .\templates\navbar\nav.html:47
+msgid "Contact"
+msgstr ""

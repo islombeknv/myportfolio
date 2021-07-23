@@ -1,0 +1,353 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-12 09:25+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: .\contact\models.py:6 .\posts\models.py:8 .\posts\models.py:102
+#: .\templates\index.html:551
+msgid "name"
+msgstr "ism"
+
+#: .\contact\models.py:7 .\posts\models.py:104 .\templates\index.html:556
+msgid "phone"
+msgstr "telefon"
+
+#: .\contact\models.py:8 .\posts\models.py:103 .\templates\index.html:562
+msgid "email"
+msgstr "pochta"
+
+#: .\contact\models.py:9 .\templates\index.html:568
+msgid "message"
+msgstr "xabar"
+
+#: .\contact\models.py:11 .\myportfolio\models.py:7 .\myportfolio\models.py:27
+#: .\posts\models.py:12 .\posts\models.py:26 .\posts\models.py:39
+#: .\posts\models.py:52 .\posts\models.py:75
+msgid "created_at"
+msgstr "yasalgan vaqti"
+
+#: .\contact\models.py:17
+msgid "contact"
+msgstr "Aloqa"
+
+#: .\contact\models.py:18
+msgid "contacts"
+msgstr "Aloqalar"
+
+#: .\myportfolio\models.py:6 .\myportfolio\models.py:19 .\posts\models.py:23
+#: .\posts\models.py:37 .\posts\models.py:50 .\posts\models.py:71
+msgid "title"
+msgstr "sarlahva"
+
+#: .\myportfolio\models.py:13 .\myportfolio\models.py:24 .\posts\models.py:58
+#: .\posts\models.py:66
+msgid "category"
+msgstr "bo'lim"
+
+#: .\myportfolio\models.py:14 .\posts\models.py:59
+msgid "categories"
+msgstr "bo'limlar"
+
+#: .\myportfolio\models.py:18 .\posts\models.py:7 .\posts\models.py:70
+msgid "image"
+msgstr "rasm"
+
+#: .\myportfolio\models.py:20 .\posts\models.py:72
+msgid "content"
+msgstr "tarkib"
+
+#: .\myportfolio\models.py:33 .\myportfolio\models.py:34
+msgid "portfolio"
+msgstr "portfel"
+
+#: .\portfolio\settings.py:87
+msgid "English"
+msgstr "Ingliz"
+
+#: .\portfolio\settings.py:88
+msgid "Uzbek"
+msgstr "O'zbek"
+
+#: .\portfolio\settings.py:89
+msgid "Russian"
+msgstr "Ruscha"
+
+#: .\posts\models.py:9
+msgid "position"
+msgstr "pozitsiya"
+
+#: .\posts\models.py:10
+msgid "info"
+msgstr "malimot"
+
+#: .\posts\models.py:18 .\posts\models.py:19
+msgid "OurClients"
+msgstr "Bizning mijozlar"
+
+#: .\posts\models.py:24
+msgid "partner"
+msgstr "hamkor"
+
+#: .\posts\models.py:32
+msgid "Ourpartners"
+msgstr "Bizning hamkorlar"
+
+#: .\posts\models.py:33
+msgid "OurPartners"
+msgstr "Bizning hamkorlar"
+
+#: .\posts\models.py:45
+msgid "tag"
+msgstr "teg"
+
+#: .\posts\models.py:46
+msgid "tags"
+msgstr "teglar"
+
+#: .\posts\models.py:73
+msgid "long_description"
+msgstr "uzun malimot"
+
+#: .\posts\models.py:90
+msgid "blog"
+msgstr "blog"
+
+#: .\posts\models.py:91
+msgid "blogs"
+msgstr "bloglar"
+
+#: .\posts\models.py:99
+msgid "comments"
+msgstr "Izohlar"
+
+#: .\posts\models.py:105 .\posts\models.py:112
+msgid "comment"
+msgstr "sharh"
+
+#: .\posts\models.py:106
+#, fuzzy
+#| msgid "created_at"
+msgid "created_on"
+msgstr "yasalgan vaqti"
+
+#: .\posts\models.py:113
+msgid "commets"
+msgstr "izohlar"
+
+#: .\templates\index.html:33
+msgid "Living In Tashkent"
+msgstr "Toshkentda yashash"
+
+#: .\templates\index.html:51
+msgid "Learn More"
+msgstr "Batafsil ma'lumot"
+
+
+#: .\templates\index.html:137 .\templates\layouts\footer.html:12
+#: .\templates\layouts\header.html:31 .\templates\navbar\nav.html:30
+msgid "Services"
+msgstr "Services"
+
+#: .\templates\index.html:139
+msgid ""
+"Ut enim ad minim veniam, quis\n"
+"                            nostrud\n"
+"                            exercitation\n"
+"                            ullamco laboris nisi ut aliquip ex ea commodo "
+"consequat.\n"
+"                        "
+msgstr ""
+
+#: .\templates\index.html:156 .\templates\index.html:173
+#: .\templates\index.html:190 .\templates\index.html:209
+#: .\templates\index.html:226 .\templates\index.html:243
+msgid ""
+"Lorem Ipsumning standart qismi shu vaqtdan beri ishlatilgan\n"
+"                                the is\n"
+"                                reproduced\n"
+"                                below for those interested."
+msgstr ""
+
+#: .\templates\index.html:266
+msgid ""
+"Lorem Ipsumning standart qismi shu vaqtdan beri ishlatilgan\n"
+"                            Ipsum used since the is\n"
+"                            reproduced\n"
+"                            below for those interested."
+msgstr ""
+
+#: .\templates\index.html:277 .\templates\index.html:307
+msgid ""
+"Lorem ipsum dolor sit amet, consectetuer adipiscing\n"
+"                            elit. Aenean\n"
+"                            commodo\n"
+"                            ligula eget dolor."
+msgstr ""
+
+#: .\templates\index.html:334
+msgid ""
+"Men Freelancer uchun mavjudman\n"
+"                            ."
+msgstr ""
+
+#: .\templates\index.html:340
+msgid "Hire Me!"
+msgstr "Meni yollang!"
+
+#: .\templates\index.html:348
+msgid ""
+"I\n"
+"                                                Am\n"
+"                                                Available For Freelancer."
+msgstr ""
+
+#: .\templates\index.html:395
+#, fuzzy
+#| msgid "Client"
+msgid "Clients"
+msgstr "Bizning mijozlar"
+
+#: .\templates\index.html:397 .\templates\index.html:457
+#: .\templates\index.html:494
+msgid ""
+"Ut enim ad minim veniam, quis nostrud\n"
+"                            exercitation\n"
+"                            ullamco laboris nisi ut aliquip ex ea commodo "
+"consequat."
+msgstr ""
+
+#: .\templates\index.html:429
+#, fuzzy
+#| msgid "Ourpartners"
+msgid "Our partner"
+msgstr "Bizning hamkorlar"
+
+#: .\templates\index.html:455
+msgid "News"
+msgstr "Yangiliklar"
+
+#: .\templates\index.html:492
+msgid "Get In Tuch"
+msgstr ""
+
+#: .\templates\layouts\footer.html:7
+msgid "Important Link"
+msgstr "Muhim havola"
+
+#: .\templates\layouts\footer.html:9
+msgid "Terms & Condition"
+msgstr "Shartlar va shartlar"
+
+#: .\templates\layouts\footer.html:10
+msgid "Privacy Policy"
+msgstr "Privacy Policy"
+
+#: .\templates\layouts\footer.html:11
+msgid "Return Policy"
+msgstr "Return Policy"
+
+#: .\templates\layouts\footer.html:13
+msgid "Sitemap"
+msgstr "Sayt xaritasi"
+
+#: .\templates\layouts\footer.html:17
+msgid "Our Pages"
+msgstr "Bizning sahifalarimiz"
+
+#: .\templates\layouts\footer.html:19 .\templates\layouts\header.html:25
+#: .\templates\navbar\nav.html:24
+msgid "Home"
+msgstr "Bosh sahifa"
+
+#: .\templates\layouts\footer.html:20
+msgid "Features"
+msgstr "Xususiyatlari"
+
+#: .\templates\layouts\footer.html:21 .\templates\layouts\header.html:28
+#: .\templates\navbar\nav.html:27
+msgid "About"
+msgstr "Haqida"
+
+#: .\templates\layouts\footer.html:22 .\templates\layouts\header.html:40
+#: .\templates\navbar\nav.html:40
+msgid "Client"
+msgstr "Bizning mijozlar"
+
+#: .\templates\layouts\footer.html:23
+msgid "Pricing"
+msgstr "Narxlar"
+
+#: .\templates\layouts\footer.html:27
+msgid "Support"
+msgstr "Qo'llab-quvvatlash"
+
+#: .\templates\layouts\footer.html:29
+msgid "Help Center"
+msgstr "Yordam markazi"
+
+#: .\templates\layouts\footer.html:30
+msgid "Live Chat"
+msgstr "Jonli suhbat"
+
+#: .\templates\layouts\footer.html:31
+msgid "Downloads"
+msgstr "Yuklamalar"
+
+#: .\templates\layouts\footer.html:32
+msgid "Press Kit"
+msgstr "Kit to'plami"
+
+#: .\templates\layouts\footer.html:36
+msgid "Locations"
+msgstr "Joylar"
+
+#: .\templates\layouts\footer.html:38
+msgid "Melbourne"
+msgstr "Melburn"
+
+#: .\templates\layouts\footer.html:39
+msgid "London"
+msgstr ""
+
+#: .\templates\layouts\footer.html:40
+msgid "New York"
+msgstr "Nyu York"
+
+#: .\templates\layouts\footer.html:41
+msgid "San Francisco"
+msgstr "San-Fransisko"
+
+#: .\templates\layouts\footer.html:42
+msgid "Ontario"
+msgstr "Ontario"
+
+#: .\templates\layouts\header.html:34 .\templates\navbar\nav.html:33
+msgid "Resume"
+msgstr ""
+
+#: .\templates\layouts\header.html:37 .\templates\navbar\nav.html:37
+msgid "Work"
+msgstr "Ish"
+
+#: .\templates\layouts\header.html:44 .\templates\navbar\nav.html:44
+msgid "Blog"
+msgstr ""
+
+#: .\templates\layouts\header.html:47 .\templates\navbar\nav.html:47
+msgid "Contact"
+msgstr "Aloqa"

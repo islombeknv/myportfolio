@@ -1,0 +1,81 @@
+{% extends 'navbar/nav_base.html' %}
+{% load static %}
+
+{% block content %}
+    <!-- Start Blog -->
+    <section class="section mt-4" id="blog">
+        <div class="container">
+            <div class="row" data-aos="fade-up">
+                <div class="col-lg-12">
+                    {% if request.GET.tag %}
+                        <div class="section_title text-center pt-5">
+                            <h3><span class="font-weight-bold">#{{ request.GET.tag }}</span></h3>
+                        </div>
+                    {% else %}
+                        <div class="section_title text-center">
+                            <h3>Our Latest <span class="font-weight-bold">News</span></h3>
+                            {#                        <div class="vr_line mx-auto d-block"></div>#}
+                            <p class="sec_subtitle mx-auto text-muted pt-2">Ut enim ad minim veniam, quis nostrud
+                                exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="row mt-3" data-aos="fade-up">
+
+                {% for post in object_list %}
+                    <div class="col-lg-4">
+                        <div class="blog_box_contant mt-3">
+                            <div class="bolg_img p-2">
+                                <img src="{{ post.image.url }}" alt="Responsive img"
+                                     class="img-fluid rounded">
+                            </div>
+                            <div class="blog_box_detail pl-4 pr-4 pb-3">
+                                <span>B</span> By Admin | {{ post.created_at|date:'d F Y' }}
+                                <h5 class="font-weight-bold mt-2"><a href="{% url 'blog:detail' pk=post.pk %}"
+                                                                     class="text-dark">{{ post.title }}</a></h5>
+                                <p class="text-muted ">{{ post.content }}</p>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+
+                <div class="col-12">
+                    {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}
+                    <nav class="float-right">
+                        <ul class="pagination">
+
+                            {% if page_obj.has_previous %}
+                                <li class="page-item">
+                                    <a class="page-link" href="?page={{ page_obj.previous_page_number }}">
+                                        <span>&laquo;</span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                </li>
+                            {% endif %}
+                            {% for page in page_obj.paginator.page_range %}
+                                <li class="page-item {% if page == page_obj.number %} active {% endif %}">
+                                    <a class="page-link" href="?page={{ page }}">{{ page }}</a>
+                                </li>
+                            {% endfor %}
+
+
+
+                            {% if page_obj.has_next %}
+                                <li class="page-item">
+                                    <a class="page-link" href="?page={{ page_obj.next_page_number }}">
+                                        <span>&raquo;</span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </li>
+                            {% endif %}
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Blog -->
+{% endblock %}

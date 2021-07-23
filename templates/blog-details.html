@@ -1,0 +1,206 @@
+{% extends 'navbar/nav_base.html' %}
+{% block extra_css %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+            crossorigin="anonymous"></script>
+    <style>
+        .blog__details__comment h4 {
+            color: #333333;
+            font-weight: 700;
+            margin-bottom: 35px;
+            text-align: center;
+        }
+
+        .blog__details__comment form input {
+            height: 50px;
+            width: 100%;
+            border: 1px solid #e1e1e1;
+            padding-left: 20px;
+            font-size: 15px;
+            color: #b7b7b7;
+            margin-bottom: 30px;
+            -webkit-transition: all, 0.3s;
+            -o-transition: all, 0.3s;
+            transition: all, 0.3s;
+        }
+
+        .blog__details__comment form input::-webkit-input-placeholder {
+            color: #b7b7b7;
+        }
+
+        .blog__details__comment form input::-moz-placeholder {
+            color: #b7b7b7;
+        }
+
+        .blog__details__comment form input:-ms-input-placeholder {
+            color: #b7b7b7;
+        }
+
+        .blog__details__comment form input::-ms-input-placeholder {
+            color: #b7b7b7;
+        }
+
+        .blog__details__comment form input::placeholder {
+            color: #b7b7b7;
+        }
+
+        .blog__details__comment form input:focus {
+            border-color: #000000;
+        }
+
+        .blog__details__comment form textarea {
+            height: 120px;
+            width: 100%;
+            border: 1px solid #e1e1e1;
+            padding-left: 20px;
+            padding-top: 12px;
+            font-size: 15px;
+            color: #b7b7b7;
+            margin-bottom: 24px;
+            resize: none;
+            -webkit-transition: all, 0.3s;
+            -o-transition: all, 0.3s;
+            transition: all, 0.3s;
+        }
+
+        .blog__details__comment form textarea::-webkit-input-placeholder {
+            color: #b7b7b7;
+        }
+
+        .blog__details__comment form textarea::-moz-placeholder {
+            color: #b7b7b7;
+        }
+
+        .blog__details__comment form textarea:-ms-input-placeholder {
+            color: #b7b7b7;
+        }
+
+        .blog__details__comment form textarea::-ms-input-placeholder {
+            color: #b7b7b7;
+        }
+
+        .blog__details__comment form textarea::placeholder {
+            color: #b7b7b7;
+        }
+
+        .blog__details__comment form textarea:focus {
+            border-color: #000000;
+        }
+
+        .blog__details__comment form button {
+            letter-spacing: 4px;
+            padding: 14px 35px;
+        }
+    </style>
+{% endblock %}
+{% block content %}
+    <div class="container mt-5 pt-5">
+        <div class="row mt-5 pt-3">
+            <div class="col-md-1"></div>
+            <div class="col-sm-5 col-md-5 col-lg-5">
+                <img src="{{ object.image.url }}" style="width: 100%;">
+            </div>
+            <div class="col-sm-5 col-md-5 col-lg-5">
+                <p class="card-text"><small class="text-mute">By Admin | <i class="bi bi-calendar4-event"> </i>
+                    {{ object.created_at|date:'F m, Y ' }}
+                    | <i class="bi bi-chat-dots"></i> 8 comments
+                </small>
+                </p>
+                <hr>
+                <h3 class="mb-4">{{ object.title }}</h3>
+                <p>
+                    <em><b>" {{ object.content }} "</b></em>
+                </p>
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-1"></div>
+            <div class="col-sm-10 pb-4">
+                <p>
+                    {{ object.long_description|safe }}
+                </p>
+                <div class="float-right">
+                    {% for tag in object.tags.all %}
+                        <a href="{% url 'blog:list' %}?tag={{ tag.title }}"
+                           style="font-weight: bolder; padding-right:10px;color: black">#{{ tag.title }}</a>
+                    {% endfor %}
+                </div>
+                <hr>
+            </div>
+
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            {% if object.get_prev %}
+                <div class="col-sm-2 col-md-2 col-lg-5  p-2"><p class="text-muted">Prevous post</p>
+                    <h4><i class="bi bi-arrow-left"></i>
+                        <a class="text-dark" href="{% url 'blog:detail' pk=object.get_prev.pk %}">
+                            {{ object.get_prev.title }}
+                        </a>
+                    </h4>
+                <hr>
+                </div>
+            {% endif %}
+
+            {% if object.get_next %}
+                <div class="col-sm-2 col-md-2 col-lg-5 text-right float-right  p-2"><p class="text-muted">Next
+                    post</p>
+                    <h4>
+                        <a class="text-dark" href="{% url 'blog:detail' pk=object.get_next.pk %}">
+                            {{ object.get_next.title }}
+                        </a><i class="bi bi-arrow-right"></i>
+                    </h4>
+                <hr>
+                </div>
+            {% endif %}
+
+        </div>
+        <div class="row">
+            <h3 class="text-center m-auto mt-5 mb-2">All comments</h3>
+            <div class=" m-auto col-md-9 col-sm-9">
+                <ul>
+                    {% for comment in object.get_comments %}
+                        <li class="media">
+                            <div class="media-body">
+                                                <span class="text-muted pull-right">
+                                                    <small class="text-muted">
+                                                        {{ comment.created_on|timesince }} ago
+                                                    </small>
+                                                </span>
+                                <strong>{{ comment.name }}</strong>
+                                <p>
+                                    {{ comment.comment }}
+                                </p>
+                            </div>
+                        </li>
+                        <hr>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-9 col-md-9 col-lg-9 m-auto">
+            <div class="blog__details__comment mt-2">
+                <form method="POST" action="{% url 'blog:comment' pk=object.pk %}#comment-section">
+                    {% csrf_token %}
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4">
+                            <input name="name" type="text" placeholder="Name">
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <input name="email" type="email" placeholder="Email">
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <input name="phone" type="number" placeholder="Phone">
+                        </div>
+                        <div class="col-lg-12 text-center">
+                            <textarea name="comment" placeholder="Comment"></textarea>
+                            <button type="submit" class="site-btn">Post Comment</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <p id="contact"></p>
+    </div>
+{% endblock %}

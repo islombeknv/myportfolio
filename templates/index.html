@@ -1,0 +1,589 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% load i18n %}
+{% block content %}
+
+    <!--Start Home-->
+    <section class="home-bg section h-100vh" id="home">
+        <div class="bg-overlay"></div>
+        <div class="home-table">
+            <div class="home-table-center">
+                <div class="container">
+                    <div class="row justify-content-center" data-aos="fade-up">
+                        <div class="col-lg-12">
+                            <div class="text-white text-center">
+                                <div class="text-white text-center">
+
+                                    <h1 class="header_title mb-0 mt-3 text-center text-white mx-auto"><span
+                                            class="text-type" data-elements="I'm Islombek Normamatov"></span>Islombek
+                                        Normamatov</h1>
+                                    <p class="header_subtitle text-white mx-auto mt-3 mb-0">
+
+                                        {#                                <h1 class="header_title mb-0 mt-3 text-center text-white mx-auto">#}
+                                        {#                                    <div class="simple-text-rotate">Creative By Landing Page</div>#}
+                                        {#                                </h1>#}
+
+                                    <h4 style="font-family: Arial;" class="typewrite" data-period="1200"
+                                        data-type='[ "Backend developer.", "Full stack developer.",
+                                       "Freelancer."]'>
+                                        <span class="wrap"></span>
+                                    </h4></p>
+
+                                    <ul class="mb-0 list-inline text-center skill_home mt-4">
+                                        <li class="list-inline-item mr-0">{% trans 'Living In Tashkent' %}</li>
+                                        <li class="list-inline-item mr-0">+998 99 715 27 02</li>
+                                        <li class="list-inline-item mr-0">islomjon2702@gmail.com</li>
+                                    </ul>
+                                    <ul class="social_home list-unstyled text-center pt-5">
+                                        <li class="list-inline-item"><a href="#"><i class="mdi mdi-facebook"></i></a>
+                                        </li>
+                                        <li class="list-inline-item"><a href="#"><i class="mdi mdi-linkedin"></i></a>
+                                        </li>
+                                        <li class="list-inline-item"><a href="#"><i class="mdi mdi-dribbble"></i></a>
+                                        </li>
+                                        <li class="list-inline-item"><a href="#"><i class="mdi mdi-google-plus"></i></a>
+                                        </li>
+                                        <li class="list-inline-item"><a href="#"><i class="mdi mdi-twitter"></i></a>
+                                        </li>
+                                    </ul>
+                                    <div class="header_btn">
+                                        <a href="#"
+                                           class="btn btn-outline-custom btn-rounded mt-4 mr-3">{% trans 'Learn More' %}</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!--End Home-->
+
+    <!-- Start About -->
+    <section class="section" id="about">
+        <div class="container" data-aos="fade-up">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section_title text-center">
+                        <h3><span class="font-weight-bold">{% blocktrans %}About</span> Me</h3>
+                            <div class="vr_line mx-auto d-block"></div>
+                            <p class="sec_subtitle mx-auto text-muted pt-2">Ut enim ad minim veniam, quis nostrud
+                                exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                            </div>
+                            </div>
+                            <div class="row mt-3 vertical-content" data-aos="fade-up">
+                            <div class="col-lg-6">
+                            <div class="about_content mt-3">
+                            <h6 class="mb-3">Hello & Welcome</h6>
+                            <h3 class="mb-3 font-weight-bold text-custom">I'm Islombek.</h3>
+                            <ul class="mb-0 list-inline about-work">
+                                <li class="list-inline-item mr-0 text-muted">Full stack developer</li>
+                                <li class="list-inline-item mr-0 text-muted">Freelanser</li>
+                                <li class="list-inline-item mr-0 text-muted">Backend</li>
+                            </ul>
+                            <p class="text-muted mt-3">The point of using Lorem Ipsum is that it has a more-or-less
+                                normal
+                                distribution of letters, as opposed to using 'Content here, content here', making it
+                                look
+                                like
+                                readable English.</p>{% endblocktrans %}
+                            <div class="progress-bars skill-custom mt-4">
+                                <div class="clearfix">
+                                    <div class="text-dark font-weight-bold float-left">Python</div>
+                                    <div class="text-muted float-right">80%</div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="0"
+                                         aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="clearfix">
+                                    <div class="text-dark font-weight-bold float-left">Full stack developer</div>
+                                    <div class="text-muted float-right">59%</div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 59%" aria-valuenow="25"
+                                         aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="clearfix">
+                                    <div class="text-dark font-weight-bold float-left">Freelanser</div>
+                                    <div class="text-muted float-right">88%</div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 88%" aria-valuenow="0"
+                                         aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="about-img mt-3">
+                                    <img src="{% static 'img/about.jpg' %}" alt=""
+                                         class="img-fluid mx-auto d-block position-relative about-tween">
+                                </div>
+                            </div>
+                            </div>
+        </div>
+    </section>
+    <!-- End About -->
+
+    <!-- Start Services -->
+    <section class="section bg-light" id="services">
+        <div class="container">
+            <div class="row" data-aos="fade-up">
+                <div class="col-lg-12">
+                    <div class="section_title text-center">
+                        <h3>Our <span class="font-weight-bold">{% trans 'Services' %}</span></h3>
+                        <div class="vr_line mx-auto d-block"></div>
+                        <p class="sec_subtitle mx-auto text-muted pt-2">{% blocktrans %}Ut enim ad minim veniam, quis
+                            nostrud
+                            exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        {% endblocktrans %}
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3" data-aos="fade-up">
+                <div class="col-lg-4">
+                    <div class="services_boxes bg-white mt-3 rounded p-4">
+                        <div class="services_icon text-custom">
+                            <h2>01.</h2>
+                        </div>
+                        <div class="services_content mt-3">
+                            <h5 class="mb-0 font-weight-bold">Backend Development</h5>
+                            <p class="text-muted mb-0 mt-2">{% blocktrans %}The standard chunk of Lorem Ipsum used since
+                                the is
+                                reproduced
+                                below for those interested.{% endblocktrans %}</p>
+                        </div>
+                        <div class="read_more">
+                            <a href="#" class="text-custom"><i class="pe-7s-pen"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="services_boxes bg-white mt-3 rounded p-4">
+                        <div class="services_icon text-custom">
+                            <h2>02.</h2>
+                        </div>
+                        <div class="services_content mt-3">
+                            <h5 class="mb-0 font-weight-bold">Web & Mobile Development</h5>
+                            <p class="text-muted mb-0 mt-2">{% blocktrans %}The standard chunk of Lorem Ipsum used since
+                                the is
+                                reproduced
+                                below for those interested.{% endblocktrans %}</p>
+                        </div>
+                        <div class="read_more">
+                            <a href="#" class="text-custom"><i class="pe-7s-pen"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="services_boxes bg-white mt-3 rounded p-4">
+                        <div class="services_icon text-custom">
+                            <h2>03.</h2>
+                        </div>
+                        <div class="services_content mt-3">
+                            <h5 class="mb-0 font-weight-bold">Logo & Motion Design</h5>
+                            <p class="text-muted mb-0 mt-2">{% blocktrans %}The standard chunk of Lorem Ipsum used since
+                                the is
+                                reproduced
+                                below for those interested.{% endblocktrans %}</p>
+                        </div>
+                        <div class="read_more">
+                            <a href="#" class="text-custom"><i class="pe-7s-pen"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3" data-aos="fade-up">
+                <div class="col-lg-4">
+                    <div class="services_boxes bg-white mt-3 rounded p-4">
+                        <div class="services_icon text-custom">
+                            <h2>04.</h2>
+                        </div>
+                        <div class="services_content mt-3">
+                            <h5 class="mb-0 font-weight-bold">Ai development</h5>
+                            <p class="text-muted mb-0 mt-2">{% blocktrans %}The standard chunk of Lorem Ipsum used since
+                                the is
+                                reproduced
+                                below for those interested.{% endblocktrans %}</p>
+                        </div>
+                        <div class="read_more">
+                            <a href="#" class="text-custom"><i class="pe-7s-pen"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="services_boxes bg-white mt-3 rounded p-4">
+                        <div class="services_icon text-custom">
+                            <h2>05.</h2>
+                        </div>
+                        <div class="services_content mt-3">
+                            <h5 class="mb-0 font-weight-bold">Data Analytics</h5>
+                            <p class="text-muted mb-0 mt-2">{% blocktrans %}The standard chunk of Lorem Ipsum used since
+                                the is
+                                reproduced
+                                below for those interested.{% endblocktrans %}</p>
+                        </div>
+                        <div class="read_more">
+                            <a href="#" class="text-custom"><i class="pe-7s-pen"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="services_boxes bg-white mt-3 rounded p-4">
+                        <div class="services_icon text-custom">
+                            <h2>06.</h2>
+                        </div>
+                        <div class="services_content mt-3">
+                            <h5 class="mb-0 font-weight-bold">Graphic Design</h5>
+                            <p class="text-muted mb-0 mt-2">{% blocktrans %}The standard chunk of Lorem Ipsum used since
+                                the is
+                                reproduced
+                                below for those interested.{% endblocktrans %}</p>
+                        </div>
+                        <div class="read_more">
+                            <a href="#" class="text-custom"><i class="pe-7s-pen"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Services -->
+
+    <!-- Start Education -->
+    <section class="section" id="resume">
+        <div class="container">
+            <div class="row" data-aos="fade-up">
+                <div class="col-lg-12">
+                    <div class="section_title text-center">
+                        <h3>Best <span class="font-weight-bold">Education & Experiance</span></h3>
+                        <div class="vr_line mx-auto d-block"></div>
+                        <p class="sec_subtitle mx-auto text-muted pt-2">{% blocktrans %}The standard chunk of Lorem
+                            Ipsum used since the is
+                            reproduced
+                            below for those interested.{% endblocktrans %}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3 pt-3 vertical-content" data-aos="fade-up">
+                <div class="col-lg-6">
+                    <div class="futures_boxes mt-3">
+                        <h3 class="font-weight-bold">Studied Bobir Akilhanov tech academy</h3>
+                        <p class="text-muted mt-3">{% blocktrans %}Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit. Aenean
+                            commodo
+                            ligula eget dolor.{% endblocktrans %}</p>
+                        <div class="futures_icon pt-2">
+                            <p><span>Start</span><b> 2020-2021</b></p>
+                            <p><span><i class="mdi mdi-arrow-right"></i></span> Master In Computer Science.</p>
+                            <p><span><i class="mdi mdi-arrow-right"></i></span> Bootstrap Html Css Design.</p>
+                            <p><span><i class="mdi mdi-arrow-right"></i></span> Planing & Strategy.</p>
+                        </div>
+                        <div class="read_more_aero">
+                            <a href="#" class="text-custom"><i class="mdi mdi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="pt-2">
+                        <img src="{% static 'img/img1.png' %}" class="img-fluid mx-auto d-block" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4 pt-4 vertical-content" data-aos="fade-up">
+                <div class="col-lg-6">
+                    <div class="pt-2">
+                        <img src="{% static 'img/img2.png' %}" class="img-fluid mx-auto d-block" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="futures_boxes mt-3">
+                        <h3 class="font-weight-bold">Full stack development</h3>
+                        <p class="text-muted mt-3">{% blocktrans %}Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit. Aenean
+                            commodo
+                            ligula eget dolor.{% endblocktrans %}</p>
+                        <div class="futures_icon pt-2">
+                            <p><span>Start</span><b> 2021</b></p>
+                            <p><span><i class="mdi mdi-arrow-right"></i></span> Backend Developer.</p>
+                            <p><span><i class="mdi mdi-arrow-right"></i></span> Web Developer.</p>
+                            <p><span><i class="mdi mdi-arrow-right"></i></span> Freelancer And Themeforest.</p>
+                        </div>
+                        <div class="read_more_aero">
+                            <a href="#" class="text-custom"><i class="mdi mdi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Education -->
+
+    <!-- Start Cta -->
+    <section class="section bg-cta-img">
+        <div class="bg-overlay"></div>
+        <div class="container">
+            <div class="row" data-aos="fade-up">
+                <div class="col-lg-12">
+                    <div class="text-center">
+                        <h1 class="font-weight-normal text-white">{% blocktrans %}I Am Available For
+                            Freelancer.{% endblocktrans %}</h1>
+
+                        <div class="mt-4 pt-3">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-outline-custom btn-rounded" data-toggle="modal"
+                                    data-target="">{% trans 'Hire Me!' %}
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalCenter">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title mb-0 font-weight-bold" id="exampleModalLongTitle">{% blocktrans %}I
+                                                Am
+                                                Available For Freelancer.{% endblocktrans %}</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form class="hire-form">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" id="fname"
+                                                           placeholder="First Name">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="email" class="form-control" id="semail"
+                                                           placeholder="Email">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" id="cname"
+                                                           placeholder="Company Name">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" id="mnumber"
+                                                           placeholder="Mobile Name">
+                                                </div>
+                                                <div>
+                                                    <button class="btn btn-custom w-100">Send Data</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Cta -->
+
+    <!-- Start Client -->
+    <section class="section bg-light" id="client">
+        <div class="container">
+            <div class="row" data-aos="fade-up">
+                <div class="col-lg-12">
+                    <div class="section_title text-center">
+                        <h3>Our <span class="font-weight-bold">{% trans 'Clients' %}</span></h3>
+                        <div class="vr_line mx-auto d-block"></div>
+                        <p class="sec_subtitle mx-auto text-muted pt-2">{% blocktrans %}Ut enim ad minim veniam, quis nostrud
+                            exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.{% endblocktrans %}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3" data-aos="fade-up">
+                {% for client in clients %}
+                    <div class="col-lg-4">
+                        <div class="client_boxes mt-3 text-center">
+                            <div class="mt-3">
+                                <img src="{{ client.image.url }}" alt=""
+                                     class="img-fluid rounded-circle ml-3">
+                            </div>
+                            <h6 class="text-muted font-weight-bold mb-0 mt-3">{{ client.name }}</h6>
+                            <h5 class="font-weight-bold p-0 mt-2">{{ client.position }}</h5>
+                            <p class="text-muted m-3">{{ client.info }}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <!-- End Client -->
+
+    <!-- Start Great People -->
+    <section class="section bg-people">
+        <div class="bg-overlay"></div>
+        <div class="container">
+            <div class="row" data-aos="fade-up">
+                <div class="col-lg-12">
+                    <div class="section_title text-center text-white">
+                        <h3><span class="font-weight-bold">{% trans 'Our partner' %}</span></h3>
+                        <div class="vr_line mx-auto d-block"></div>
+                        <p class="sec_subtitle mx-auto pt-2"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3" data-aos="fade-up">
+                {% for partner in partners %}
+                    <div class="col-lg-2 mt-3">
+                        <div class="logo_img">
+                            <img src="{{ partner.image.url }}" alt="{{ partner.title }}"
+                                 class="mx-auto img-fluid d-block">
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <!-- End Great People -->
+
+    <!-- Start Blog -->
+    <section class="section" id="blog">
+        <div class="container">
+            <div class="row" data-aos="fade-up">
+                <div class="col-lg-12">
+                    <div class="section_title text-center">
+                        <h3><span class="font-weight-bold">{% trans 'News' %}</span></h3>
+                        <div class="vr_line mx-auto d-block"></div>
+                        <p class="sec_subtitle mx-auto text-muted pt-2">{% blocktrans %}Ut enim ad minim veniam, quis nostrud
+                            exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.{% endblocktrans %}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3" data-aos="fade-up">
+                {% for post in blogs %}
+                    <div class="col-lg-4">
+                        <div class="blog_box_contant mt-3">
+                            <div class="bolg_img p-2">
+                                <img src="{{ post.image.url }}" alt="Responsive img"
+                                     class="img-fluid rounded">
+                            </div>
+                            <div class="blog_box_detail pl-4 pr-4 pb-3">
+                                <span>M</span> Mark Stapp | {{ post.created_at|date:'d M Y' }}
+                                <h5 class="font-weight-bold mt-2"><a href="{% url 'blog:detail' pk=post.pk %}"
+                                                                     class="text-dark">{{ post.title }}</a>
+                                </h5>
+                                <p class="text-muted ">{{ post.content }}</p>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+
+            </div>
+        </div>
+    </section>
+    <!-- End Blog -->
+    <!-- Start Contact -->
+    <section class="section_all bg-light" id="contact">
+        <div class="container">
+            <div class="row" data-aos="fade-up">
+                <div class="col-lg-12">
+                    <div class="section_title text-center">
+                        <h3 class="font-weight-bold">{% trans 'Get In Tuch' %}</h3>
+                        <div class="vr_line mx-auto d-block"></div>
+                        <p class="sec_subtitle mx-auto text-muted pt-2">{% blocktrans %}Ut enim ad minim veniam, quis nostrud
+                            exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.{% endblocktrans %}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3" data-aos="fade-up">
+                {% if messages %}
+                    <div class="col-12" data-aos="zoom-in">
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            {% for i in messages %}
+                                {{ i }}
+                            {% endfor %}
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                {% endif %}
+                <div class="col-lg-6">
+                    <div class="contact_info_box">
+                        <div class="contact_details_content bg-white p-3 mt-3">
+                            <div class="contact_icon float-left  pull-left">
+                                <i class="pe-7s-map-marker text_custom mr-3"></i>
+                            </div>
+                            <div class="contact_detail">
+                                <h6 class="font-weight-bold">Address</h6>
+                                <p class="text-muted mb-0">Tashkent <br>Minneapolis, MN 55415</p>
+                            </div>
+                        </div>
+                        <div class="contact_details_content bg-white p-3 mt-3">
+                            <div class="contact_icon float-left  pull-left">
+                                <i class="pe-7s-mail-open text_custom mr-3"></i>
+                            </div>
+                            <div class="contact_detail">
+                                <h6 class="font-weight-bold">Mail</h6>
+                                <p class="text-muted mb-0">islomjon2702@mail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact_details_content bg-white p-3 mt-3">
+                            <div class="contact_icon float-left  pull-left">
+                                <i class="pe-7s-phone text_custom mr-3"></i>
+                            </div>
+                            <div class="contact_detail">
+                                <h6 class="font-weight-bold">Call</h6>
+                                <p class="text-muted mb-0"><a class="text-muted" href="tel:+998997152702">+998 99 715 27
+                                    02,</a>
+                                    <br>+903-812-9462.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <form class="business_form_custom" method="POST" action="{% url 'contact:create' %}#contact">
+                        {% csrf_token %}
+                        <div class="form-row mt-3">
+                            <div class="col">
+                                <input name="{% trans 'name' %}" type="text" class="form-control" required placeholder="Name...">
+                            </div>
+                        </div>
+                        <div class="form-row mt-3">
+                            <div class="col">
+                                <input name="{% trans 'phone' %}" type="number" required class="form-control"
+                                       placeholder="Number...">
+                            </div>
+                        </div>
+                        <div class="form-row mt-3">
+                            <div class="col">
+                                <input name="{% trans 'email' %}" type="email" class="form-control"
+                                       placeholder="Email...">
+                            </div>
+                        </div>
+                        <div class="form-row mt-3">
+                            <div class="col">
+                            <textarea name="{% trans 'message' %}" rows="4" class="form-control"
+                                      required placeholder="Your message..."></textarea>
+                            </div>
+                        </div>
+                        <div class="form-row mt-3">
+                            <div class="col">
+                                <input type="submit" id="submit" name="send" class="submitBnt btn btn-custom"
+                                       value="Send Message">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact -->
+    {% block extra_js %}
+        <script>
+            $('.alert').alert()
+        </script>
+    {% endblock %}
+{% endblock %}
