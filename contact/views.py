@@ -6,9 +6,11 @@ from django.urls import reverse
 from django.views.generic import CreateView
 
 from contact.forms import ContactModelForm
+from contact.models import ContactModel
 
 
 class ContactCreateView(CreateView):
+    model = ContactModel
     form_class = ContactModelForm
     success_url = '/contact/done/'
 
