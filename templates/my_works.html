@@ -28,8 +28,12 @@
                                 <a class="{% if request.GET.cat == cat.pk|stringformat:'i' %}active{% endif %}"
                                    href="{% url 'portfolio:list' %}?cat={{ cat.pk }}">{{ cat.title }}</a>
                             </li>
+                            {% empty %}
+                            <li class="list-inline-item">
+                                <h3>Ma'limotlar yo'q!</h3>
+                            </li>
                         {% endfor %}
-                    </ul>khbhsvhsh/?cat=
+                    </ul>
                 </div>
             </div>
             <div class="row mt-3 work-filter" data-aos="fade-up">
