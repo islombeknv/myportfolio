@@ -88,11 +88,6 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 LANGUAGE_CODE = 'en'
-LANGUAGES = (
-    ('en', _('English')),
-    ('uz', _('Uzbek')),
-    # ('ru', _('Russian')),
-)
 
 LOCALE_PATHS = BASE_DIR / 'locale',
 
