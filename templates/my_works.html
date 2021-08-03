@@ -21,10 +21,10 @@
                     <ul class="text-center list-unstyled list-inline mb-0 text-capitlize work_menu" id="menu-filter">
                         {% for cat in categories %}
                             {% if forloop.counter == 1 %}
-                            <li class="list-inline-item">
-                                <a class=""
-                                   href="{% url 'portfolio:list' %}?cat={{ cat.pk }}">All</a>
-                            </li>
+                                <li class="list-inline-item">
+                                    <a class=""
+                                       href="{% url 'portfolio:list' %}?cat={{ cat.pk }}">All</a>
+                                </li>
                             {% endif %}
                             <li class="list-inline-item">
                                 <a class="{% if request.GET.cat == cat.pk|stringformat:'i' %}active{% endif %}"
@@ -49,10 +49,8 @@
                             </div>
                         </div>
                     </div>
-                    {% empty %}
-                            <li>
-                                <h6 class="text-center">Ma'limotlar yo'q!</h6>
-                            </li>
+                {% empty %}
+                    <h6 class="text-center">Ma'limotlar yo'q!</h6>
                 {% endfor %}
             </div>
         </div>
