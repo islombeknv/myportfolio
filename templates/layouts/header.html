@@ -46,18 +46,6 @@
                 <li class="nav-item">
                     <a href="#contact" class="nav-link">{% trans 'Contact' %}</a>
                 </li>
-                <li class="nav-item dropdown disabled">
-                    {% get_current_language as lang %}
-                    <a class="nav-link dropdown-toggle" id="dropdown09" data-toggle="dropdown">{{ lang|upper }}</a>
-                    <div class="dropdown-menu">
-                        {% get_available_languages as all_lang %}
-                        {% for l in all_lang  %}
-                            {% if l.0 != lang %}
-                                 <a class="dropdown-item" href="{% get_lang_url request l.0 %}" style="color:black;">{{ l.0|upper }}</a>
-                            {% endif %}
-                        {% endfor %}
-
-                    </div>
                 </li>
             </ul>
         </div>
