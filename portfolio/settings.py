@@ -1,7 +1,6 @@
 from pathlib import Path
 
 from decouple import config
-from django.utils.translation import ugettext_lazy as _
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -12,7 +11,6 @@ DEBUG = True
 ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
-    'modeltranslation',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -88,8 +86,6 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 LANGUAGE_CODE = 'en'
-
-LOCALE_PATHS = BASE_DIR / 'locale',
 
 TIME_ZONE = 'Asia/Tashkent'
 
