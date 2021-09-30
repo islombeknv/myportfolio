@@ -1,6 +1,6 @@
 {% load static %}
 {% load my_tags %}
-{% load i18n %}
+
 <!--Navbar Start-->
 <nav class="navbar navbar-expand-lg fixed-top custom-nav bg-white"
      style="box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);">
@@ -21,30 +21,30 @@
             <ul class="navbar-nav ml-auto navbar-center" id="mySidenav">
                 {% url 'pages:home' as home %}
                 <li class="nav-item {% if request.path == home %} active {% endif %}">
-                    <a href="{{ home }}" class="nav-link" style="color:black;">{% trans 'Home' %}</a>
+                    <a href="{{ home }}" class="nav-link" style="color:black;">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="{% url 'pages:home' %}#about" class="nav-link" style="color:black;">{% trans 'About' %}</a>
+                    <a href="{% url 'pages:home' %}#about" class="nav-link" style="color:black;">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="{% url 'pages:home' %}#services" class="nav-link" style="color:black;">{% trans 'Services' %}</a>
+                    <a href="{% url 'pages:home' %}#services" class="nav-link" style="color:black;">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a href="{% url 'pages:home' %}#resume" class="nav-link" style="color:black;">{% trans 'Resume' %}</a>
+                    <a href="{% url 'pages:home' %}#resume" class="nav-link" style="color:black;">Resume</a>
                 </li>
                 {% url 'portfolio:list' as portfolio %}
                 <li class="nav-item {% if request.path == portfolio %} active {% endif %}">
-                    <a href="{{ portfolio }}" class="nav-link " style="color:black;">{% trans 'Work' %}</a>
+                    <a href="{{ portfolio }}" class="nav-link " style="color:black;">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a href="{% url 'pages:home' %}#client" class="nav-link" style="color:black;">{% trans 'Client' %}</a>
+                    <a href="{% url 'pages:home' %}#client" class="nav-link" style="color:black;">Client</a>
                 </li>
                 {% url 'blog:list' as blog %}
                 <li class="nav-item {% if request.path == blog %} active {% endif %}">
-                    <a href="{{ blog }}" class="nav-link" style="color:black;">{% trans 'Blog' %}</a>
+                    <a href="{{ blog }}" class="nav-link" style="color:black;">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a href="{% url 'pages:home' %}#contact" class="nav-link" style="color:black;">{% trans 'Contact' %}</a>
+                    <a href="{% url 'pages:home' %}#contact" class="nav-link" style="color:black;">Contact</a>
                 </li>
                 <li class="nav-item dropdown disabled">
                     {% get_current_language as lang %}

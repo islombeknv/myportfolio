@@ -10,6 +10,7 @@ from contact.models import ContactModel
 
 
 class ContactCreateView(CreateView):
+    template_name = 'index.html'
     model = ContactModel
     form_class = ContactModelForm
     success_url = '/contact/done/'
