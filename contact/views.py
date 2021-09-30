@@ -11,9 +11,6 @@ class ContactCreateView(CreateView):
     template_name = 'index.html'
     model = ContactModel
     form_class = ContactModelForm
-    success_url = '/contact/done/'
+    success_url = '/'
 
 
-def contact_send(request):
-    messages.add_message(request, messages.INFO, 'Your message has been sent successfully')
-    return redirect(reverse('pages:home'))
