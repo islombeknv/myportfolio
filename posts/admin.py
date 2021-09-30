@@ -1,5 +1,4 @@
 from django.contrib import admin
-from modeltranslation.admin import TranslationAdmin
 
 from posts.models import BlogModel, OurClientsModel, OurPartnersmodel, TagBlogModel, CategoryBlogModel, CommentModel
 
@@ -19,21 +18,11 @@ class CategoryBlogModelAdmin(admin.ModelAdmin):
 
 
 @admin.register(BlogModel)
-class BlogModelAdmin(TranslationAdmin):
+class BlogModelAdmin(admin.ModelAdmin):
     list_filter = ['created_at', ]
     list_display = ['title', 'created_at']
     search_fields = ['title', ]
     autocomplete_fields = ['tags', 'category']
-
-    class Media:
-        js = (
-            'http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js',
-            'http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js',
-            'modeltranslation/js/tabbed_translation_fields.js',
-        )
-        css = {
-            'screen': ('modeltranslation/css/tabbed_translation_fields.css',),
-        }
 
 
 @admin.register(OurClientsModel)
