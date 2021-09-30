@@ -15,17 +15,6 @@ class ContactCreateView(CreateView):
     form_class = ContactModelForm
     success_url = '/contact/done/'
 
-    def form_valid(self, form):
-        obj = form.save()
-        text = f'Name: {obj.name}\nEmail: {obj.email}\nPhone: {obj.phone}\nMessage: {obj.message}\nDate{obj.created_at}'
-        send_mail(
-            'Notification',
-            text,
-            settings.EMAIL_HOST_USER,
-            [settings.EMAIL_HOST_USER],
-        )
-        return redirect(self.success_url)
-
 
 def contact_send(request):
     messages.add_message(request, messages.INFO, 'Your message has been sent successfully')
